@@ -20,14 +20,13 @@ outputs = array([[0,0,1,1]]).T
 random.seed(1)
 
 # First and only Synapse
-# Initilizing the waights randomly
+# Initilizing the weights randomly
 synapse1 = 2 * random.random((3,1))-1
 # (3,1) because we have 3 input features for each output
 
 # Training begins here
 for Try in range(20000):
     # First layer (l1) is the input layer
-    # Hidden Layer or Synapse is in middle
     # Output layer is the second layer(l2)
 
     # Initilizing input layer with previous inputs
